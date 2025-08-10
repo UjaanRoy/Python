@@ -1,11 +1,25 @@
-"""Vrisha is very good at maths. But her friends always get stuck whenever
-there is power calculation. They feel it is too lengthy, and too much
-calculation is required to solve the problem. So, to help her friends, she
-designed a program where users can calculate n number of power of the
-given number.
-"""
-print ("Using this code you can get the power of a number easily")
-number=int(input("Put number:"))
-power=int(input("Value to be raised to (to the power of):"))
-output=(number**power)
-print (number,"raised to the power of",power,"is",output)
+"""Write a program to make a calculator : For making a calculator create four functions add, subtract, multiply, divide. Ask for a choice from users which operation they want to perform. Take user input whatever operation they want to perform And call that function accordingly."""
+def add(P,Q):
+    return P+Q
+def substract(P,Q):
+    return P-Q
+def multiply(P,Q):
+    return P*Q
+def divide(P,Q):
+    return P/Q
+print ("Choose one of the operations to be done-")
+print ("a. Addition \n""b.Substraction \n""c.Multiplication \n""d.Division")
+choice=input("Enter your choice here:")
+num1=int(input("Enter number 1-"))
+num2=int(input("Enter number 2-"))
+if choice=="a":
+    print (num1,"+",num2,"=",add (num1,num2))
+elif choice=="b":
+    print (num1,"-",num2,"=",substract(num1,num2))
+elif choice=="c":
+    print (num1,"*",num2,"=",multiply(num1,num2))
+elif choice=="d":
+    print (num1,"/",num2,"=",divide(num1,num2))
+else:
+    print ("Invalid input has been entered...")
+       
